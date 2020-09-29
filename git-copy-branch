@@ -4,4 +4,4 @@ CURRENT_BRANCH="$(git rev-parse --abbrev-ref HEAD)"
 
 echo "$CURRENT_BRANCH" | pbcopy
 
-printf "Current git branch name was copied to the clipboard (%s)\n" "$CURRENT_BRANCH"
+printf 'Current git branch name was copied to the clipboard (\e[1;31m%s\e[0m)\n' "$CURRENT_BRANCH"
