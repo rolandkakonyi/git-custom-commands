@@ -1,0 +1,7 @@
+#!/bin/sh
+
+LAST_SHA="$(git rev-parse --short HEAD)"
+
+echo "$LAST_SHA" | pbcopy
+
+printf "Last git commit SHA was copied to the clipboard (%s)\n" "$LAST_SHA"
